@@ -9,41 +9,43 @@
     <!-- Author: Kent Rabago -->
 
     <EditText
-        android:id="@+id/edit_title"
+        android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:hint="@string/edit_title"
+        android:hint="@string/title"
         />
 
     <EditText
-        android:id="@+id/edit_content"
+        android:id="@+id/content"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/title"
+        android:layout_above="@+id/send"
         android:layout_centerVertical="true"
-        android:hint="@string/edit_content" />
+        android:hint="@string/content" />
     
     <Button
-        android:id="@+id/btn_send"
+        android:id="@+id/send"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/edit_content"
-        android:hint="@string/btn_send"
+        android:layout_above="@+id/clear"
+        android:hint="@string/send"
         />
 
     <Button
-        android:id="@+id/btn_clear"
+        android:id="@+id/clear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btn_send"
-        android:hint="@string/btn_clear"/>
+        android:layout_above="@+id/cancel"
+        android:hint="@string/clear"/>
 
     <Button
-        android:id="@+id/btn_cancel"
+        android:id="@+id/cancel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btn_clear"
-        android:hint="@string/btn_cancel"/>
+        android:layout_alignParentBottom="true"
+        android:hint="@string/cancel"/>
 
     <!-- Author: Kent Rabago -->
 
